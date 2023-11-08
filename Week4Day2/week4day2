@@ -1,0 +1,267 @@
+//Week 4 - Day 2 - Lecture/Lab/HW - JS Total Recall
+//https://ps-wise-course.herokuapp.com/18-week/mod-1/week-4/day-2/slides/
+
+
+// I. Variables & Datatypes
+
+// How do we assign a value to a variable?
+// How do we change the value of a variable?
+// How do we assign an existing variable to a new variable?
+// Remind me, what are declare, assign, and define?
+// What is pseudocoding and why should you do it?
+// What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
+
+// let someVariable = 2;
+// console.log(someVariable)
+
+// someVariable = 3;
+// console.log(someVariable)
+
+// let newVariable = someVariable
+// console.log(newVariable)
+
+// let declaredVariable = "a varible"
+
+
+// // B. Strings
+// // Create a variable called firstVariable
+// // Assign it the value of the string "Hello World"
+// let firstVariable = "Hello World"
+// console.log(firstVariable)
+// // Change the value of this variable to some number
+// firstVariable = 88;
+// console.log(firstVariable)
+// // Store the value of firstVariable in a new variable called secondVariable
+// let secondVariable = firstVariable;
+// console.log(secondVariable)
+// // Change the value of secondVariable to any string.
+// secondVariable = "Pinky"
+// console.log(secondVariable)
+// // What is the value of firstVariable?
+// console.log(firstVariable)
+// // Create a variable called yourName and set it equal to your name as a string. 
+// // Then, write an expression that takes the string "Hello, my name is " 
+// // and the variable yourName 
+// // so that it returns a new string with them concatenated.
+// let yourName = "Vicky"
+// let expression = `Hello my name is ${yourName}`
+// console.log(expression)
+
+
+// // C. Booleans
+// // Using the provided variable definitions, replace the blanks so that all log statements print true in the console. 
+
+// const a = 4;
+// const b = 53;
+// const c = 57;
+// const d = 16;
+// const e = 'Kevin';
+// console.log(a < b);
+// console.log(c > d);
+// console.log('Name' === 'Name');
+
+// //  // FOR THE NEXT TWO, USE ONLY && OR ||
+// console.log(true || false);
+// console.log(false && false && false && false && false || true);
+// console.log(false == false)
+// console.log(e == 'Kevin');
+// console.log(e === 'Kevin');
+// console.log(a + b === c); 
+// console.log(a * a == d); 
+// console.log(a * a === d);
+ 
+// console.log(48 == '48');
+// // ==  "loose"  compares value only
+
+// console.log(48 === '48');
+// // === "strict"  compares datatype and value 
+
+
+
+// D. The farm
+// 1. Declare a variable animal. Set it to be either "cow" or something else
+// 2. Write code that will print out "mooooo" if the it is equal to cow
+// 3.Change your code so that if the variable animalis anything other than a cow, it will print "Hey! You're not a cow."
+
+// let animal = 'cow'
+// let animal = 'something else'
+
+// if ( animal === 'cow') {
+//     console.log('moo')
+// } else {
+//    console.log('NOT A COWWWW')
+// }
+
+
+// E. Driver's Ed
+// Make a variable that holds a person's age; be semantic
+// Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
+
+// let age = 13;
+// // let age = 18;
+// if (age >= 16) {
+//     console.log ("Here are the keys!")
+// } else if ( age < 16) {
+//     console.log ("Sorry, you are too young! :(")
+// }
+
+// // II. Loops
+// // A. The basics
+// // for (let START; END; INCREMENT/COUNT)
+// // Write a loop that will print out all the numbers from 0 to 10, inclusive
+// for (let i=0; i <= 10; i++) {
+//     console.log(i)
+// }
+// // Write a loop that will print out all the numbers from 10 up to and including 400
+// for (let i=10; i<= 400; i++) {
+//     console.log(i)
+// }
+// // Write a loop that will print out every third number starting with 12 and going no higher than 4000
+// for (let i=12; i < 4000; i+=3) {
+//     console.log(i)
+// }
+
+
+// B. Get even
+// Print out the numbers that are within the range of 1 - 100
+// Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
+
+// for (let i = 1 ; i < 100; i++) {
+//     if (i % 2 === 0) {
+//         console.log( i + " <-- is an even number")
+//     }
+// }
+
+
+// C. Give me Five
+// For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five
+
+// for (let i = 0; i <= 100; i++ ) {
+//     if ( i % 3 === 0) {
+//         console.log(`I found a ${i}. Three is a crowd`)
+//     }
+//     if (i % 5 === 0 ) {
+//         console.log (`I found a ${i}. High Five!`)
+//     }
+// }
+
+
+// D. Savings account
+// Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+// Check your work! Your bank_account should have $55 in it.
+// function bank_account() {
+//     let sum = 0;
+//     for ( let i = 1; i <= 10; i++) {
+//        sum += i;
+//     }
+//     console.log(sum)
+// }
+// bank_account();
+
+
+// You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+// Check your work! Your bank_account should have $10,100 in it.
+
+// function bank_account() {
+//     let sum = 0;
+//     for ( let i = 1; i <= 100; i++) {
+//        sum += i*2;
+//     }
+//     console.log(sum)
+// }
+// bank_account();
+
+
+////////////////////////////////////////////////////////////
+// III. Arrays & Control flow
+// What are the things in an array called? AN ELEMENT.
+// Do Arrays guarantee those things will be in order? YES, STARTS AT INDEX 0.
+// What real-life thing could you model with an array? LISTS.
+
+// B. Easy Does It
+// Create an array that contains three quotes and store it in a variable called quotes
+
+// const quotes = ["YOLO", "TGIF", "LOL"]
+// console.log(quotes)
+
+////////////////////////////////////////////////////
+// // C. Accessing elements
+// // //Each item in an array is called an element, and each element is accessed by its numerical index. As shown in the preceding illustration, numbering begins with 0
+
+// // Given the following array const randomThings = [1, 10, "Hello", true]
+// // How do you access the 1st element in the array?
+// // Change the value of "Hello"to "World"
+// // Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
+
+// const randomThings = [1, 10, "Hello", true]
+// console.log(randomThings[0])
+
+// // // splice(start)
+// // // splice(start, deleteCount)
+// // // splice(start, deleteCount, item1)
+// // // splice(start, deleteCount, item1, item2)
+// // // splice(start, deleteCount, item1, item2, /* …, */ itemN)
+
+// console.log(randomThings)
+// randomThings.splice(2, 1, "World")
+// console.log(randomThings)
+
+////////////////////////////////////////////////////
+// // D. Change values
+// // Given the following array const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+// // What would you write to access the 3rd element of the array?
+// const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+// console.log(ourClass[2])
+// // Change the value of "Github" to "Octocat"
+// ourClass.splice(4,1,"Octocat")
+// console.log(ourClass)
+// // Add a new element, "Cloud City" to the array
+// ourClass.push("Cloud City")
+// console.log(ourClass)
+
+////////////////////////////////////////////////////
+// // E. Mix It Up
+// // Note: You don't really need .splice()for these. 
+//You could use it, but there are simpler array methods that are more appropriate.
+
+// // Given the following array: const myArray = [5, 10, 500, 20]
+// const myArray = [5, 10, 500, 20]
+// // Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
+// myArray.push("Aegon")
+// console.log(myArray)
+// myArray.push("Bear")
+// console.log(myArray)
+// // Remove the 5 from the beginning of the array.
+// myArray.shift();
+// console.log(myArray)
+// // Add the string "Bob Marley"to the beginning of the array.
+// myArray.unshift("Bob Marley")
+// console.log(myArray)
+// // Remove the string of your choice from the end of the array.
+// myArray.pop();
+// console.log(myArray)
+// // Reverse this array using Array.prototype.reverse(). Did you mutate the array?
+// //  What does mutate mean? The act of changing the properties of a value. 
+// //  Did the .reverse()method return anything?
+// myArray.reverse()
+// console.log(myArray)
+
+
+// F. Biggie Smalls
+// Create a variable that contains an integer.
+// Write an if ... else statement that:
+// console.log()s "little number" if the number is entered is less than 100
+// console.log()s "big number" if the number is greater than or equal to 100.
+
+// let biggieSmalls = 5;
+
+let biggieSmalls = 5;
+
+
+if (biggieSmalls >= 100) {
+    console.log("BIG Number")
+} else {
+    console.log("Little Number")
+}
+
+// G.
